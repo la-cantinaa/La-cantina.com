@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>La Cantina</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        /* خلفية عامة للبيسي (حبيبات قهوة وخشب) */
+        background-image: url('Espresso Photos - Download Free High-Quality Pictures _ Freepik.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* باش تبقى الخلفية ثابتة */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* الطبقة اللي فيها الموني ديالك */
+    .menu-container {
+        width: 100%;
+        height: 100%;
+        background-image: url("Black and Brown Illustrative Coffee Shop Menu.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; /* ف البيسي كيبقى مجموع ومقاد */
+        position: relative;
+    }
+
+    /* تعديل خاص بالتليفونات */
+    @media (max-width: 767px) {
+        .menu-container {
+            background-size: 100% 100%; /* ف التليفون كيشد الشاشة كاملة */
+        }
+        body {
+            background-image: none; /* كنحيدو خلفية القهوة ف التليفون باش ما تتقالش الصفحة */
+            background-color: #f6f3f0;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="menu-container"></div>
+</body>
+</html>
